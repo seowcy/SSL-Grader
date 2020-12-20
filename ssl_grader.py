@@ -273,10 +273,10 @@ if __name__ == "__main__":
     for hostname in args:
         print("Grading certificate for %s...\n" % hostname)
         try:
-	        x509, cert_info = get_cert_info(hostname)
-	        cert_chain = verify_certificate_chain(hostname)
-	        result = {"hostname": hostname, "cert_info": cert_info, "cert_chain": cert_chain}
-	        grade_info = grade_cert(x509, result)
+            x509, cert_info = get_cert_info(hostname)
+            cert_chain = verify_certificate_chain(hostname)
+            result = {"hostname": hostname, "cert_info": cert_info, "cert_chain": cert_chain}
+            grade_info = grade_cert(x509, result)
         except Exception as e:
             print("\tError encountered: %s" % e)
             continue
