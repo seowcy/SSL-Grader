@@ -10,11 +10,11 @@ import ssl
 import math
 import json
 import socket
-import OpenSSL  # https://www.pyopenssl.org/en/stable/index.html
+import OpenSSL  # https://www.pyopenssl.org/en/stable/index.html, pip install pyopenssl
 import certifi
 import requests
 import subprocess
-from ocspchecker import ocspchecker # pip install oscp-checker
+from ocspchecker import ocspchecker # pip install ocsp-checker
 from datetime import datetime, timedelta
 
 BANNER = r"""
